@@ -1,4 +1,4 @@
-# django2.0 - rest-api with Heroku Integration
+# Django2.0 - Rest-API with Heroku Integration
 A REST api written in Django for people with deadlines
 
 ## Technologies used
