@@ -1,4 +1,4 @@
-# Django2.0 - Rest-API with Heroku Integration
+# Django 2.0 - Rest-API with Heroku Integration
 A REST api written in Django for people with deadlines
 
 ## Technologies used
@@ -7,7 +7,7 @@ A REST api written in Django for people with deadlines
 
 
 ## Installation
-* If you wish to run your own build, first ensure you have python globally installed in your computer. If not, you can get python [here](https://www.python.org").
+* If you wish to run your own build, first ensure you have Python and Heroku globally installed in your computer. If not, you can get python [here](https://www.python.org) and Heroku [here](https://devcenter.heroku.com/articles/heroku-cli).
 * After doing this, confirm that you have installed virtualenv globally as well. If not, run this:
     ```bash
         $ pip install virtualenv
@@ -17,7 +17,7 @@ A REST api written in Django for people with deadlines
         $ git clone https://github.com/gitgik/django-rest-api.git
     ```
 
-* #### Install
+* #### Steps
     1. Cd into your the cloned repo as such:
         ```bash
             $ cd django-heroku-rest-api
@@ -48,7 +48,6 @@ A REST api written in Django for people with deadlines
     7. Time to go remote!
     
     ```bash 
-    $ sudo snap install heroku 
     $ heroku login 
     $ heroku create project 
     $ git push heroku master 
