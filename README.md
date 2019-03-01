@@ -1,4 +1,4 @@
-# django-rest-api
+# django2.0 - rest-api with Heroku Integration
 A REST api written in Django for people with deadlines
 
 ## Technologies used
@@ -17,10 +17,10 @@ A REST api written in Django for people with deadlines
         $ git clone https://github.com/gitgik/django-rest-api.git
     ```
 
-* #### Dependencies
+* #### Install
     1. Cd into your the cloned repo as such:
         ```bash
-            $ cd django-rest-api
+            $ cd django-heroku-rest-api
         ```
     2. Create and fire up your virtual environment:
         ```bash
@@ -35,14 +35,31 @@ A REST api written in Django for people with deadlines
         ```bash
             $ python manage.py makemigrations
             $ python manage.py migrate
+            $ python manage.py createsuperuser
         ```
-
-* #### Run It
-    Fire up the server using this one simple command:
+    5. Run It
     ```bash
         $ python manage.py runserver
     ```
-    You can now access the file api service on your browser by using
+    6. Test it Locally
+   
+        http://localhost:8000/users/
+  
+    7. Time to go remote!
+    
+    ```bash 
+    $ sudo snap install heroku 
+    $ heroku login 
+    $ heroku create project 
+    $ git push heroku master 
+    $ heroku run python manage.py migrate 
+    $ heroku run python manage.py createsuperuser 
     ```
-        http://localhost:8000/auth/
-    ```
+    
+    Your project should now be live at: 
+    
+    https://heroku_project_name.herokuapp.com/users/
+    
+    If you want to set your own project to support Heroku here is a detailed explanation:
+    
+    https://gist.github.com/agusalex/70146cb09381c0adc4b3a2f68d035cfa
